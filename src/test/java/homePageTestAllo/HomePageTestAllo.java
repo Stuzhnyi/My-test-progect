@@ -17,17 +17,17 @@ public class HomePageTestAllo {
         driver.manage().window().maximize();
         driver.get("https://allo.ua");
 
-        sleep(5000); // Ожидание загрузки страницы
+        sleep(5000);
 
         WebElement searchInput = driver.findElement(By.id("search-form__input"));
         searchInput.sendKeys("Фен");
         searchInput.sendKeys(Keys.RETURN);
 
-        sleep(3000); // Ожидание результатов поиска
+        sleep(3000);
 
         driver.findElement(By.partialLinkText("Фен")).click();
 
-        sleep(3000); // Ожидание загрузки страницы товара
+        sleep(3000);
 
         Assert.assertTrue(driver.getTitle().contains("Фен"), "Страница не содержит 'Фен' в заголовке");
 
