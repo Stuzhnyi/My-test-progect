@@ -24,6 +24,8 @@ public class HomePageTest {
 
         Assert.assertTrue(mansButtonLocator.isDisplayed());
 
+        driver.quit();
+
     }
 
     @Test

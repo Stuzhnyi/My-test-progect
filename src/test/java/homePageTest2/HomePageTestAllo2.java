@@ -27,7 +27,7 @@ public class HomePageTestAllo2 {
             driver.get("https://allo.ua/");
 
             try {
-                WebElement element = driver.findElement(By.xpath("//*[@id='__layout']/div/header/div[1]/div[2]/a/img")); // можна By.id, By.xpath тощо
+                WebElement element = driver.findElement(By.xpath("//*[@id='__layout']/div/header/div[1]/div[2]/a/img"));
                 System.out.println("Елемент знайдено!");
             } catch (NoSuchElementException e) {
                 System.out.println("Елемент не знайдено.");
